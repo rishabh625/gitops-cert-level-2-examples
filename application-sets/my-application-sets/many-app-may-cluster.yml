@@ -7,10 +7,10 @@ spec:
     - matrix:
         generators:
           - git:
-              repoURL: https://github.com/argoproj/argo-cd.git
+              repoURL: https://github.com/codefresh-contrib/gitops-cert-level-2-examples.git
               revision: HEAD
               directories:
-                - path: applicationset/examples/matrix/cluster-addons/*
+                - path: application-sets/example-apps/*
           - clusters: selector:'{}'
   template:
     metadata:
